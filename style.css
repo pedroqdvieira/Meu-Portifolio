@@ -35,7 +35,7 @@ h2{
     left: 0;
     width: 100%;
     padding: 2rem 3%;
-    background: #000000b3;
+    background: #000000b3; /*o b3 ao final adiciona transparencia*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,10 +48,12 @@ h2{
     transition: 0.5s;
 }
 
+/*aumentar a logo ao passar mouse por cima*/
 #logo:hover {
     font-size: 2.7rem;
 }
 
+/*itens do header*/
 #header>nav>a {
     font-size: 1.2rem;
     color: #F3EDE7;
@@ -61,11 +63,13 @@ h2{
     border-bottom: 3px solid transparent;
 }
 
+/*aumentar itens ao passar mouse por cima*/
 #header>nav>a:hover {
     color: #E4781B;
     border-bottom: 3px solid #E4781B;
 }
 
+/*mundada a animação para ficar mais acessível para displays menores*/
 @media (max-width: 1000px) {
     #header {
         position: relative;
@@ -90,6 +94,7 @@ h2{
     }
 }
 
+/*medias para redimensionar header de acordo com resolução*/
 @media (max-width: 865px){
     #header>a{
         font-size: 1.5rem;
@@ -190,6 +195,7 @@ span {
     font-weight: 500;
 }
 
+/*adiciona bordas circulares aos icones*/
 #icones_social>a {
     display: inline-flex;
     justify-content: center;
@@ -205,6 +211,7 @@ span {
     transition: 0.3s;
 }
 
+/*faz com que as bordas e icones crescam ao passar o mouse por cima*/
 #icones_social>a:hover {
     color: #F3EDE7;
     background-color: #E4781B;
@@ -279,6 +286,7 @@ span {
 
 }
 
+/*faz com que o fundo da area com texto fique transparente, com borda laranja e muda cor da fonte para laranja também*/
 #grid_container>div:hover {
     background: transparent;
     color: #E4781B;
@@ -316,6 +324,7 @@ span {
     margin: auto;
 }
 
+/*Diversos @media para evitar que a página fique quebrada*/
 @media (max-width: 1600px){
     #educacao_info,
     #exp_info,
